@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DDF-GYM Landing Page</title>
+    <!-- Ion Icons Js -->
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.esm.js"></script>
+    <script nomodule src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.js"></script>
+    <!-- JS -->
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="text/css" href="gym.png">
+</head>
+
+<body>
+    <!-- Menu -->
+    <div class="menu">
+        <div class="container flex">
+            <!-- Mobile Button -->
+            <div class="mobile-btn">
+                <ion-icon name="grid"></ion-icon>
+            </div>
+            <div class="logo">
+                <img src="data:image/png;base64,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" alt="" />
+            </div>
+
+            <ul class="nav">
+                <li class="nav-item"><a href="#">Home</a></li>
+                <li class="nav-item"><a href="#why-us">Features</a></li>
+                <li class="nav-item"><a href="#explore">Explore</a></li>
+                <li class="nav-item"><a href="#discount">Register</a></li>
+            </ul>
+
+            <a href="#" class="btn">Register</a>
+        </div>
+    </div>
+    <!-- End Menu -->
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container flex">
+            <div class="text">
+                <h1 class="mb">
+                    Inside the World of <span>Fitness.</span> 
+                </h1>
+
+                <p class="mb">
+                    Dive deep into the dynamic world of fitness with a closer look at the experiences, expertise, and transformative journeys of three exceptional trainers. Explore their unique perspectives, training methods, and the impact they've made on their clients' lives. From motivational strategies to personalized workout routines, gain insights into the diverse approaches these trainers employ to help individuals achieve their fitness goals.</p>
+
+                <a href="#" class="btn mt">Get Started Now</a>
+            </div>
+
+            <div class="visual">
+                <img src="https://raw.githubusercontent.com/programmercloud/pgc-gym/main/img/banner-img.png" alt="" />
+            </div>
+        </div>
+    </header>
+    <!-- End Header -->
+
+    <!-- Why Us -->
+    <div class="section" id="why-us">
+        <div class="container flex">
+            <div class="text">
+                <h2 class="primary mb">Why Choose Us?</h2>
+                <h3 class="secondary mb">Consulatation with Expert.</h3>
+                <p class="tertiary">
+                    Our consultations with experts provide personalized advice, catering specifically to your fitness goals and needs.
+                </p>
+
+                <h3 class="secondary mb">Consulatation with Expert.</h3>
+                <p class="tertiary">
+                    Gain comprehensive support and strategies from experienced professionals, empowering you to achieve optimal results on your fitness journey.
+                </p>
+            </div>
+            <div class="visual">
+                <img src="https://raw.githubusercontent.com/programmercloud/pgc-gym/main/img/why-us.png" alt="" />
+            </div>
+        </div>
+    </div>
+    <!-- End Why Us -->
+
+    <!-- Explore -->
+    <div class="section" id="explore">
+        <div class="container flex">
+            <div class="visual">
+                <img src="https://images.pexels.com/photos/3253501/pexels-photo-3253501.jpeg?auto=compress&cs=tinysrgb&w=400" alt="" />
+            </div>
+            <div class="text">
+                <h2 class="primary mb">
+                    Explore Our Fitness <br />
+                    Studio
+                </h2>
+                <p class="tertiary mb">
+                    "Explore Our Fitness Studio: Embark on a transformative fitness journey in our state-of-the-art studio, where expert trainers customize workouts tailored to your goals. Discover a welcoming environment fostering growth, motivation, and achievement on your path to wellness."
+                </p>
+
+                <a href="#" class="btn mt">Get Started Now</a>
+            </div>
+        </div>
+    </div>
+    <!-- End Explore -->
+
+    <!-- Trainer -->
+    <div class="section" id="trainer">
+        <h2 class="primary mb">Our Professional Trainers</h2>
+        <div class="container flex">
+            <div class="trainer">
+                <img src="https://avatars.mds.yandex.net/i?id=587130b6ad0b1fc81596155fc408d55d-4034522-images-thumbs&n=13" alt="" />
+                <h3 class="secondary mb">Sam</h3>
+                <p class="tertiary mb">
+                    Sam's empathetic coaching prioritizes mental well-being, creating a safe space in fitness. His personalized support aids clients in overcoming mental health challenges, ensuring a holistic fitness journey.
+                </p>
+
+                <a href="#" class="btn-2">
+                    <ion-icon name="arrow-redo-circle-outline"></ion-icon>
+                </a>
+            </div>
+
+            <div class="trainer">
+                <img src="https://avatars.mds.yandex.net/i?id=0b6948a92ec7ed7f98e242c4acf71eff799ae1a4-9230228-images-thumbs&n=13" alt="" />
+                <h3 class="secondary mb">daved</h3>
+                <p class="tertiary mb">
+                   Daved, a former obesity fighter turned seasoned trainer, specializes in unconventional, high-intensity workouts focusing on functional movements for sustainable lifestyle changes
+                </p>
+
+                <a href="#" class="btn-2">
+                    <ion-icon name="arrow-redo-circle-outline"></ion-icon>
+                </a>
+            </div>
+
+            <div class="trainer">
+                <img src="https://avatars.mds.yandex.net/i?id=c569968f7cc4dd5fdcbee4da3a330a7631453af6-9182192-images-thumbs&n=13" alt="" />
+                <h3 class="secondary mb">daniel</h3>
+                <p class="tertiary mb">
+                    Daniel seamlessly merges technology and fitness, crafting personalized plans using cutting-edge tech, virtual sessions, and wearable tech to drive client engagement and goal attainment..
+                </p>
+
+                <a href="#" class="btn-2">
+                    <ion-icon name="arrow-redo-circle-outline"></ion-icon>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- End Trainer -->
+
+    <!-- Testimonial -->
+    <div class="section" id="testimonial">
+        <div class="container flex">
+            <div class="text">
+                <h2 class="primary">
+                    That's What Our Super <br />
+                    Client Says
+                </h2>
+
+                <br />
+                <br />
+                <br />
+
+                <div class="client">
+                    <img src="https://raw.githubusercontent.com/programmercloud/pgc-gym/main/img/client1.jpg" alt="" />
+                    <h2 class="secondary">Exelent Training</h2>
+                    <p class="tertiary">
+                        Hear firsthand testimonials from our remarkable clients, highlighting their incredible fitness transformations and the exceptional support they received. Discover inspiring stories showcasing our dedication to empowering individuals on their fitness quests.
+                    </p>
+                </div>
+            </div>
+            <div class="visual">
+                <img src="https://raw.githubusercontent.com/programmercloud/pgc-gym/main/img/testimonial.png" alt="" />
+            </div>
+        </div>
+    </div>
+    <!-- End Testimonial -->
+
+    <!-- Discount -->
+    <div class="section" id="discount">
+        <div class="container flex">
+            <div class="visual">
+                <img src="https://raw.githubusercontent.com/programmercloud/pgc-gym/main/img/discount.png" alt="" />
+            </div>
+            <div class="text">
+                <h2 class="primary mb">
+                    Fitness Classes This Summer, Pay Now And Get 25% Discount
+                </h2>
+
+                <p class="tertiary mb">
+                    Secure your spot early and enjoy a 25% discount when you pay now. Elevate your summer fitness goals with our diverse classes led by expert trainers, offering a blend of motivation, fun, and effective workouts tailored to suit all fitness levels.
+                </p>
+
+                <a href="#" class="btn bt">click now</a>
+            </div>
+        </div>
+    </div>
+    <!-- End Discount -->
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container flex">
+            <p class="tertiary">
+                &copy; created by Muss .
+            </p>
+        </div>
+    </footer>
+
+    <!-- End Footer -->
+    <script src="script.js"></script>
+</body>
+
+</html>
